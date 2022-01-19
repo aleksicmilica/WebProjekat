@@ -1,0 +1,348 @@
+.izborBioskopa{
+    border-style:solid;
+    border-color:goldenrod;
+    
+    font-style: oblique;
+    color: goldenrod;
+    text-align: center;
+    font-size: 50px;
+    text-transform:uppercase;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    flex-grow: 0 1 auto;
+    align-self:center;
+    margin: 20px;
+  
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.KorisnikZaglavljeLabela{
+    font-size: xx-large;
+    font-family: monospace;
+    background-color: black;
+    color: goldenrod;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 5px;
+  /*  border-right:3px solid goldenrod;*/
+    
+    text-decoration:underline ;
+}
+.pozadina{
+    background-image:url('spiderman.jpg');
+    background-color:#cccc;
+  
+    position: fixed; 
+    min-width: 100%;
+    min-height: 100%;
+    
+ 
+    
+    
+}
+
+.KorisnikZaglavlje{
+    height: 40px;
+    border-style: solid ;
+    border-bottom-color: goldenrod;
+    border-top-color: goldenrod;
+    order:1;
+    
+    background-color: black;
+}
+.KorisnikForma{
+    padding: 10px;
+    order: 10;
+    display: flex;
+    flex-direction:column ;
+    border-radius: 10px;
+    border: black 2px solid;
+    background-color:lightsteelblue;
+    justify-content: space-around;
+  
+}
+.KorisnikRed{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 2px;
+  
+}
+
+
+.KorisnikDugmici{
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    margin-bottom: 2px;
+    
+}
+
+.GlavniKontejner{
+    margin: 50px;
+    padding: 20px;
+    order: 3;
+    background: rgba(139, 134, 125, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.FilmRepertoar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 1cm 1cm 1cm 1cm;
+  
+}
+.naslovRepertoara{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 100px;
+}
+
+.FilmZaglavlje{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border:  2px solid black;
+    background-color: white;
+    padding: 5px;
+    width: 400px;
+}
+.FilmForma{
+    
+   
+    display: flex;
+   /* background-color: lightgrey;*/
+   
+    padding: 5px;
+    
+    align-items: center;
+  
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1cm 1cm 1cm 1cm;
+    
+}
+.Karta{
+    flex-wrap: wrap;
+    margin: 1cm 1cm 1cm 1cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: goldenrod;
+    
+}
+.Naziv{
+    order: 1;
+    height: 150px;
+    text-align: center;
+    font-size: 100px;
+    color: goldenrod;
+    font-style: oblique;
+    background-color: black;
+    
+    
+}
+.AdminForma{
+    padding: 10px;
+    background-color: lightsteelblue;
+    border: 2px black solid;
+    border-radius: 10px;
+    margin: 0.5cm;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    
+}
+.AdminLabel{
+    text-align: center;
+    font-size:large;
+    margin-bottom: 0.5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+.KorisnikNaslov{
+    text-align: center;
+    font-size:large;
+    margin-bottom: 0.5cm;
+}
+.AdminRedovitb,.AdminRedovi{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.AdminDugmici{
+    display: flex;
+   
+    justify-content: space-around;
+    margin-bottom: 2px;
+}
+
+
+.ZauzetoSediste{
+    text-align: center;
+    background-color:red;
+    border-style:  solid;
+    border-radius: 2px;
+    margin: 1px;
+
+    width: 0.5cm;
+  /*  flex: 0 1 auto;*/
+}
+.SlobodnoSediste{
+    background-color: green;
+    border-style:  solid;
+    border-radius: 2px;
+    margin: 1px;
+   
+    width: 0.5cm;
+    text-align: center;
+   /* flex: 0 1 auto;*/
+}
+.RezervisanoSediste{
+    background-color: yellow;
+    border-style:  solid;
+    text-align: center;
+    
+    border-radius: 2px;
+    margin: 1px;
+
+    width: 0.5cm;
+ /*   flex: 0 1 auto;*/
+}
+.KupiDugme{
+    margin: 2px;
+   
+    justify-content: end;
+    display: flex;
+}
+.KupiKartuDugme{
+    color: white;
+    background-color: black;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.RedUSali{
+    display: flex;
+    flex-direction: row;
+   
+}
+.PrikazForma{
+    flex-direction: row;
+}
+.PrikazSale{
+    flex-direction: column;
+    display: flex;
+}
+.LabelaSedista{
+    
+    text-align: center;
+    border-radius: 2px;
+    border-style:  solid;
+    border-color:goldenrod;
+    margin: 1px;
+    width: 0.5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table,td,tr{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+
+    background-color:white;
+    border:2px  solid goldenrod;
+    height: 100%;
+   
+
+}
+
+th{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.filmTabela{
+    border:1px solid goldenrod;
+    background-color: white;
+    font-size: large;
+    width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.TabelaPodaci{
+    margin-top: 5px;
+}
+table{
+    
+    margin-top: 0.5cm;
+    border-collapse: collapse;
+}
+
+.KartaRed1,.KartaRed2,.KartaRed3{
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 10m;
+    margin: 3px;
+    font-size: large;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.comboBox,.comboBox2,.comboBox3,.comboBox4,.comboBox5,.comboBox6,.comboBox7,.Admintb{
+    width: 5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    
+}
+.KartaRed0{
+   
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    width: 9cm;
+    margin: 3px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    background-color: gray;
+}
